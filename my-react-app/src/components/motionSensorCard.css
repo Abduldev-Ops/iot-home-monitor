@@ -1,0 +1,54 @@
+.sensor-card{
+    width: 300px;
+    height: 217px;
+    border: 0.7px solid #CEE3FD;
+    padding: 32px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.sensor-card .card-title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-title .icon-bgg{
+    background-color: #E7F2FE;
+    border-radius: 16px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-title p.title-hero{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #525252;
+}
+
+.sensor-card .card-data{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.card-data p.cd-hero{
+    margin: 0;
+    flex: 1;
+    font-size: 67px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1;
+}
+
+  
+ 

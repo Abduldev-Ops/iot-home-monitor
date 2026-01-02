@@ -1,0 +1,19 @@
+.dashboard-content {
+    flex: 1;
+    padding: 32px;
+    background-color: #F8F9FA;
+  }
+  
+  .sensor-cards-container {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 32px;
+  }
+  
+  .chart-section {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    min-height: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }

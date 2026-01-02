@@ -1,0 +1,67 @@
+.flex-container1{
+    height: 83px;
+    background-color: #FFFFFF;
+    border-bottom: solid 0.6px #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+
+.flex-container1 .head{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.head .location{
+    display: flex;
+    align-items: center;
+    height: 27px;
+    width: 82px;
+    gap: 4px; 
+    padding: 4px 12px;
+    color: #737373;
+}
+
+.location p.location-hero{
+    margin: 0;
+    font-size: 14px;
+}
+
+.head .lastUp p.lastUp-hero-txt {
+    height: 32px;
+    width: 293px;
+    padding: 4px 12px;
+    color: #737373;
+    font-size: 16px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.lastUp span.time{
+    color: #A3A3A3;
+    font-weight: 400;
+}
+
+.head .ref-btn button{
+    background-color: #4D84C8;
+    color: #FFFFFF;
+    width: 125px;
+    height: 38px;
+    border-radius: 12px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+}
+
+.head .ref-btn button:hover {
+    color: #4580c9;
+    background-color: #FFFFFF;
+    border: 0.6px solid black;
+    transition: 0.3s;
+}

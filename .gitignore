@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+sensor_data.db
+fake_sensor.csv
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Environment
+.env
+*.log
+
+# IDE
+.vscode/
+.idea/

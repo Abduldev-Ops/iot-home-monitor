@@ -1,0 +1,15 @@
+*{
+  font-family: "Fira Sans", san-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #F8F9FA;
+}
+
+.app-body {
+  display: flex;
+  min-height: calc(100vh - 83px); /* Full height minus header */
+}
