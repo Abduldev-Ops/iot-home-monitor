@@ -22,7 +22,7 @@ def run_arduino_reader():
         arduino_connected = True
         arduino_reader.read_arduino_continuous()
     except Exception as e:
-        print(f"⚠️ Arduino reader error: {e}")
+        print(f"Arduino reader error: {e}")
         arduino_connected = False
 
 @app.route('/api/sensor')
@@ -120,12 +120,13 @@ if __name__ == '__main__':
     # Give Arduino reader time to connect
     time.sleep(3)
     print("\n" + "="*50)
-    print("🚀 IoT Dashboard Backend Running")
+    print("IoT Dashboard Backend Running")
     print("="*50)
-    print(f"📡 Arduino: {'Connected' if arduino_connected else 'Disconnected'}")
-    print(f"🗄️  Database: Initialized")
-    print(f"🔔 Alerts: Enabled")
-    print(f"🌐 API: http://localhost:5000")
+    print(f"Arduino: {'Connected' if arduino_connected else 'Disconnected'}")
+    print(f"Database: Initialized")
+    print(f"Alerts: Enabled")
+    print(f"API: http://localhost:5000")
     print("="*50 + "\n")
 
     app.run(debug = True, port=5000, use_reloader=False)
+

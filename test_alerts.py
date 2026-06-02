@@ -4,12 +4,12 @@ import alerts
 print("Testing SMS alerts...")
 
 # Send a test message
-success = alerts.send_sms("🚀 Test alert from ACE IoT Monitor! If you received this, alerts are working!")
+success = alerts.send_sms("Test alert from ACE IoT Monitor! If you received this, alerts are working!")
 
 if success:
-    print("✅ SMS sent successfully! Check your phone.")
+    print("SMS sent successfully! Check your phone.")
 else:
-    print("❌ SMS failed. Check your Twilio credentials.")
+    print("SMS failed. Check your Twilio credentials.")
 
 # Test alert logic
 print("\nTesting alert logic...")

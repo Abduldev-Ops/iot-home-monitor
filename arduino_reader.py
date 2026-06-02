@@ -22,7 +22,7 @@ def find_arduino_port():
     ports = serial.tools.list_ports.comports()
     for port in ports:
         if 'Arduino' in port.description or 'USB' in port.description:
-            print(f"✅ Found Arduino on port: {port.device}")
+            print(f"Found Arduino on port: {port.device}")
             return port.device
     
     return None
@@ -41,7 +41,7 @@ def connect_arduino(port=None):
     try:
         ser = serial.Serial(port, BAUD_RATE, timeout=TIMEOUT)
         time.sleep(2) 
-        print(f"✅ Connected to Arduino on {port}")
+        print(f"Connected to Arduino on {port}")
         
        
         ser.reset_input_buffer()
@@ -122,7 +122,7 @@ def read_arduino_continuous(port=None):
                         motion_status = "Motion Detected" if data['motion'] else "No Motion"
                         print(f"[{timestamp}] Temp: {data['temperature']:.1f}°C | "
                               f"Humidity: {data['humidity']:.1f}% | {motion_status}")
-                        print(f"✅ Saved to database")
+                        print(f"Saved to database")
                     
                 except UnicodeDecodeError:
                     continue
